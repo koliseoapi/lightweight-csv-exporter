@@ -1,0 +1,39 @@
+{
+  "name": "csv-exporter",
+  "version": "1.0.0",
+  "description": "Exports a list of objects into a CSV or Google Spreadsheets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koliseoapi/csv-exporter"
+  },
+  "keywords": [
+    "csv",
+    "google spreadsheets",
+    "google docs",
+    "spreadsheets"
+  ],
+  "author": "Carlos Coloma <ccescribano@gmail.com>",
+  "license": "Apache",
+  "homepage": "https://github.com/koliseoapi/csv-exporter",
+  "main": "lib/main.js",
+  "jsnext:main": "lib/main.js",
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.1.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.2",
+    "jest": "^23.5.0"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "jest-watch": "jest --watch",
+    "test": "jest"
+  }
+}
