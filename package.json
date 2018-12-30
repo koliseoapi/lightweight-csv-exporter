@@ -1,5 +1,5 @@
 {
-  "name": "csv-exporter",
+  "name": "lightweight-csv-exporter",
   "version": "1.0.0",
   "description": "Exports a list of objects into a CSV",
   "repository": {
@@ -7,11 +7,11 @@
     "url": "https://github.com/koliseoapi/csv-exporter"
   },
   "keywords": [
-    "csv"
+    "csv",
+    "export"
   ],
   "author": "Carlos Coloma <ccescribano@gmail.com>",
   "license": "Apache",
-  "homepage": "https://github.com/koliseoapi/csv-exporter",
   "main": "lib/csv-exporter.js",
   "jsnext:main": "lib/csv-exporter.js",
   "engines": {
