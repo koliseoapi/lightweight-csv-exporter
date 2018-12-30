@@ -4,7 +4,7 @@
   "description": "Exports a list of objects into a CSV",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koliseoapi/csv-exporter"
+    "url": "https://github.com/koliseoapi/lightweight-csv-exporter"
   },
   "keywords": [
     "csv",
