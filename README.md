@@ -1,5 +1,8 @@
 # CSV Exporter
 
+[![Build Status](https://secure.travis-ci.org/koliseoapi/lightweight-csv-exporter.svg?branch=master)](http://travis-ci.org/koliseoapi/lightweight-csv-exporter)
+<a href="https://www.npmjs.com/package/lightweight-csv-exporter"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/lightweight-csv-exporter.svg?maxAge=43200"></a>
+
 This small library will export any list of objects into CSV.
 
 ## Use
