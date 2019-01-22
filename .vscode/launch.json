@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch MenuTest",
+      "name": "Launch Test",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest"
     }
   ]

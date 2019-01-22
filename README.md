@@ -29,12 +29,19 @@ const data = [
 
 function asCSV() {
   // create the CSV exporter
-  const csv = createCsvExporter({
-    name: undefined,
-    age: undefined,
-    created: ({ created }) => created && created.toISOString(),
-    description: undefined
-  });
+  const csv = createCsvExporter([
+    // you can just specify a property, in which case it will also be used as column label
+    'name',
+
+    // in the most common case, column label and property name will be different
+    { label: 'Years "old"', property: 'age' },
+
+    // if you want to control the value format, specify a function as property 
+    { label: 'created', property: ({ created }) => created && created.toISOString() },
+
+    // nested values are also allowed
+    { label: 'description', property: 'metadata.description' }
+  ]);
 
   // create a CSV exporting these values
   return csv.export(data);
