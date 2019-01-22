@@ -1,6 +1,6 @@
 {
   "name": "lightweight-csv-exporter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Exports a list of objects into a CSV",
   "repository": {
     "type": "git",
