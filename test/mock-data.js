@@ -16,7 +16,7 @@ export const data = [
         'Emilio Salgari wrote several novels chronicling the adventures of Sandokan and Yanez, two of his most legendary creations.\n The pirates are introduced in "The Tigers of Mompracem", which portrays their relentless struggle against the Dutch and British powers that seek to wipe them out. '
     }
   },
-  { name: "Mortadelo y Filemón", age: 50.56667 },
+  { name: "Mortadelo y Filemón", age: 50.56667, description: '' },
   null,
   undefined
 ];
