@@ -1,7 +1,7 @@
-# CSV Exporter
+# csv-exporter
 
-[![Build Status](https://secure.travis-ci.org/koliseoapi/lightweight-csv-exporter.svg?branch=master)](http://travis-ci.org/koliseoapi/lightweight-csv-exporter)
-<a href="https://www.npmjs.com/package/lightweight-csv-exporter"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/lightweight-csv-exporter.svg?maxAge=43200"></a>
+[![Build Status](https://secure.travis-ci.org/koliseoapi/csv-exporter.svg?branch=master)](http://travis-ci.org/koliseoapi/csv-exporter)
+<a href="https://www.npmjs.com/package/@koliseoapi/csv-exporter"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@koliseoapi/csv-exporter.svg?maxAge=43200"></a>
 
 This small library will export any list of objects into CSV.
 
@@ -10,7 +10,7 @@ This small library will export any list of objects into CSV.
 Receives a config object with a property for each exported value. The following example processes a set of instances with properties named `name`, `age`, `created`, `description`. You can specify a function that will be used to format the property (otherwise the value will be used as is). `null` and `undefined` values will be exported as the empty string, and double quotes will be escaped.
 
 ```JavaScript
-import { createCsvExporter } from 'lightweight-csv-exporter';
+import { createCsvExporter } from '@koliseoapi/csv-exporter';
 
 // some test data
 const data = [
@@ -36,7 +36,7 @@ function asCSV() {
     // in the most common case, column label and property name will be different
     { label: 'Years "old"', property: 'age' },
 
-    // if you want to control the value format, specify a function as property 
+    // if you want to control the value format, specify a function as property
     { label: 'created', property: ({ created }) => created && created.toISOString() },
 
     // nested values are also allowed

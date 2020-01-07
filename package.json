@@ -1,37 +1,31 @@
 {
-  "name": "lightweight-csv-exporter",
-  "version": "1.1.2",
+  "name": "@koliseoapi/csv-exporter",
+  "version": "2.0.0",
   "description": "Exports a list of objects into a CSV",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koliseoapi/lightweight-csv-exporter"
+    "url": "https://github.com/koliseoapi/csv-exporter"
   },
   "keywords": [
     "csv",
     "export"
   ],
-  "author": "Carlos Coloma <ccescribano@gmail.com>",
+  "authors": [
+    "Carlos Coloma <ccescribano@gmail.com>",
+    "Naco Coloma <icoloma@gmail.com>"
+  ],
   "license": "Apache",
   "main": "lib/csv-exporter.js",
   "jsnext:main": "lib/csv-exporter.js",
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.1.18"
-  },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.4.2",
-    "babel-loader": "^8.0.2",
-    "fetch-mock": "^7.2.5",
-    "jest": "^23.5.0"
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
   },
   "scripts": {
     "postversion": "git push && git push --tags",
-    "jest-watch": "jest --watch",
     "test": "jest"
   }
 }
