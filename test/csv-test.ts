@@ -1,4 +1,4 @@
-import createCsvExporter from "../lib/csv-exporter";
+import createCsvExporter from "../src/csv-exporter";
 import { config, data } from "./mock-data";
 
 describe("CSV Exporter", () => {
