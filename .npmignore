@@ -1,4 +1,6 @@
-.babelrc
-.vscode/launch.json  
+babel.config.json
+.vscode/launch.json
+npm-debug.log
+node_modules
 jest.config.js
 test/*

@@ -1,5 +1,8 @@
 sudo: false
 language: node_js
+install:
+  - npm ci
+  - npm run build
 script: npm run test
 node_js:
   - "stable"
