@@ -16,7 +16,11 @@ function escape(value?: any) {
     : '"' + value.replace(/"/g, '""') + '"';
 }
 
-function createExtractor<T>(property: string): (param: T) => string {
+type PropertyReturnType = string | number | boolean | bigint | null | undefined;
+
+function createExtractor<T>(
+  property: string
+): (param: T) => PropertyReturnType {
   if (property.indexOf(".") === -1) {
     return function (object?: any) {
       return object[property];
@@ -34,7 +38,7 @@ function createExtractor<T>(property: string): (param: T) => string {
 }
 
 interface ConfigEntry<T> {
-  property: string | ((param: T) => string);
+  property: string | ((param: T) => PropertyReturnType);
   label: string;
 }
 
