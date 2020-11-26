@@ -1,6 +1,6 @@
 {
   "name": "@koliseoapi/csv-exporter",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Exports a list of objects into a CSV",
   "repository": {
     "type": "git",
